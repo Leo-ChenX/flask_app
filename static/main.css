@@ -1,0 +1,27 @@
+.text{
+    color:darkred;
+}
+
+span{
+    color: darkred;
+}
+.box{
+    text-align: center;
+    height: 30%;
+    margin: 10%;
+}
+
+form{
+    height: 30%;
+}
+
+.formBox{
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+}
+
+#submit{
+    background-color: darkblue;
+    color:white;
+}

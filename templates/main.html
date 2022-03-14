@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+      <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+   </head>
+   <body>
+        <div class = "box">
+            <div class = "text">
+                <p><b>Blood Pressure Predictor</b></p>
+                <p>Fill out the form to get your Blood Pressure estimate!</p>
+            </div>
+
+            <form method="POST" action="#">
+                <div class = "formBox">
+                <label>Age <span>*</span></label>
+                </div>
+                <input type="number" id="age" name="age" placeholder="Enter age in years" required><br>
+                
+                <div class = "formBox">
+                <label>Weight <span>*</span></label>
+                </div>
+                <input type="number" id="weight" name="weight" placeholder="Enter weight in kg" required><br>
+                
+                <input id = "submit" type="submit" value="Calculate">
+            </form>
+
+            {% if result %}
+            <p>{{result}}</p>
+            {% endif %}
+       </div>
+    
+
+   </body>
+</html>
